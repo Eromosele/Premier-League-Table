@@ -1,2 +1,2 @@
-# Premier-League-Table
-view the premier league table
+# Premier League Table
+Python code that enables you to view the premier league table
