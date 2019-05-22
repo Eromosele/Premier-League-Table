@@ -6,6 +6,9 @@ from prettytable import PrettyTable
 page = requests.get("https://www.theguardian.com/football/premierleague/table")
 tree = html.fromstring(page.content)
 
+f = pyfiglet.Figlet(font='larry3d')
+print(f.renderText('Premier league'))
+
 clubs = tree.xpath("//a[@class='team-name__long']/text()")
 points = tree.xpath("//tr/td[10]/b[1]/text()")
 goal_difference = tree.xpath("//td[9]/text()")
